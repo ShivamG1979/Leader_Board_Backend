@@ -1,4 +1,4 @@
-import User from '../models/User.js';
+import user from '../models/User.js';
 import History from '../models/History.js';
 
 export const getUsers = async (req, res) => {
