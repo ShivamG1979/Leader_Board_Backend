@@ -14,11 +14,11 @@ export const addUser = async (req, res) => {
   const { name } = req.body;
   try {
     const newUser = new User({ name });
-    await newUser.save();
+    await newUser.save(); 
     res.status(201).json(newUser);
   } catch (error) {
     res.status(400).json({ message: error.message });
-  }
+  } 
 };
 
 export const claimPoints = async (req, res) => {
